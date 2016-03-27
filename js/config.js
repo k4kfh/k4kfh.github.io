@@ -18,7 +18,7 @@ $(function() {
 		siteNavItems: [
 			{ name: '<i class="material-icons">home</i>', href: "#", newWindow: false},
 			{ name: 'About'},
-			{ name: 'Github', href: 'https://github.com/yourname', newWindow: true},
+			{ name: 'Github', href: 'https://github.com/k4kfh', newWindow: true},
 		],
 
 		// Posts folder name
