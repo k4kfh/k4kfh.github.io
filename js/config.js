@@ -47,7 +47,6 @@ $(function() {
 		githubUserSettings: {
 			username: 'k4kfh',
 			repo: 'k4kfh.github.io',
-			branch: 'master'
 		}
 
 	});
