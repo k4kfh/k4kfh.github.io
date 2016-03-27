@@ -1,127 +1,112 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>K4KFH - Hampton</title>
-        <!---jQuery comes first--->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        
-        <!---MaterializeCSS stuff--->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-        <!---Misc JS libraries--->
-        <script src="js/FitText.js-master/jquery.fittext.js"></script>
-        <script src="js/smooth-scroll/smooth-scroll.min.js"></script>
-        
-        <!---My Custom CSS/JS--->
-        <script src="js/custom.js"></script>
-        <link rel="stylesheet" href="css/custom.css">
-        
-        <!---Octicons--->
-        <link rel="stylesheet" href="octicons/octicons.css">
-        
-        <!---Let the website client know it's mobile friendly!--->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-    <body>
-        <!---viewport sized container--->
-        <div style="height: 100vh" class="valign-wrapper">
-            <div class="container">
-                <div class="container">
-                    <div class="card z-depth-5">
-                        <div class="card-content">
-                            <!---Adjusted text with fittext--->
-                            <h2 id="mainHeadline" class="center light">Hi, I'm Hampton.</h2>
-                            
-                            <h5 class="center light">I do networking, software development, and website design.</h5>
-                            
-                            <p class="center-align light">Click one of the buttons below to learn more about me.</p>
-                            <div class="center card-action">
-                                
-                                <!---This button shows BELOW the commercial button on mobile, so it hides on mobile and another reveals--->
-                                <a href="http://evilgeniustech.com/blog" class="hide-on-small-only btn btn black white-text z-depth-0 waves-effect"><i class="material-icons small left">edit</i>Blog</a>
-                                
-                                <a href="http://evilgeniustech.com/" class="btn-large blue white-text z-depth-0 waves-effect"><i class="material-icons small left">business</i>Business Site</a>
-                                
-                                <hr style="opacity:0" class="hide-on-med-and-up">
-                                
-                                <a href="http://evilgeniustech.com/blog" class="hide-on-med-and-up btn btn black white-text z-depth-0 waves-effect"><i class="material-icons small left">blog</i>My Blog</a>
-                                
-                                <hr style="opacity:0" class="hide-on-med-and-up">
-                                
-                                <a href="http://github.com/k4kfh" class="btn black white-text z-depth-0 waves-effect"><i class="octicon left octicon-mark-github"></i>GitHub</a>
-                                
-                                <hr style="opacity:0">
-                                
-                                <a href="#myProjects" class="modal-trigger btn btn-large blue white-text waves-effect z-depth-0"><i class="material-icons left">code</i>My Projects</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CMS.js</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/poole.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!---prism syntax highlighting--->
+  <link href="css/prism.css" rel="stylesheet" />
+  <script src="js/prism.js"></script>
+</head>
+<body class="blue">
+  <!-- Main View -->
+  <div class="content">
+    <div class="container white-text">
+      <div class="col s12 container">
+        <div class="row center white-text">
+            <h3 class="cms_sitename white-text light"></h3>
+            <div class="cms_nav"></div>
         </div>
-        
-        
-        
-        <!-- Modal Structure -->
-        <div id="myProjects" class="modal modal-fixed-footer">
-            <div class="modal-content">
-                <h3 class="light">I love Open-Source Software.</h3>
-                <h5 class="light">I have some Open-Source projects of my own:</h5>
-                <div class="row">
-                    <div class="col s6">
-                        <div class="card hoverable">
-                            <div class="card-content">
-                                <span class="card-title zephyr">ZephyrCab</span>
-                                <p>Provides realistic controls for model trains by simulating the physics and inner workings of a real locomotive.</p>
-                                <ul>
-                                    <li>- Written in JavaScript/HTML/CSS</li>
-                                    <li>- Interfaces with JMRI via Websockets</li>
-                                    <li>- Modular design supports many DCC decoders</li>
-                                    <li>- Easily extendable</li>
-                                </ul>
-                                <a target="_blank" href="http://k4kfh.github.io/ZephyrCab" class="btn-large z-depth-0 blue"><i class="material-icons left">open_in_new</i>Website</a>
-                                <a target="_blank" href="http://k4kfh.github.io/ZephyrCab" class="btn-large z-depth-0 blue"><i class="octicon left octicon-mark-github"></i>GitHub</a>
-                                <hr style="opacity:0">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col s6">
-                        <div class="card hoverable">
-                            <div class="card-content">
-                                <span class="card-title">Material Advent Calendar</span>
-                                <p>Simple Material Design Advent Calendar app built in HTML/CSS/JS.</p>
-                                <ul>
-                                    <li>- Simple advent calendar app supporting daily scriptures/quotes</li>
-                                    <li>- Built as a challenge to see how little time I could build one</li>
-                                    <li>- Took less than 45 minutes to make, even including Git setup</li>
-                                    <li>- Can be set up with your own custom scriptures/quotes for each day</li>
-                                </ul>
-                                <hr style="opacity:0">
-                                <a target="_blank" href="http://k4kfh.github.io/MaterialAdventCalendar" class="btn-large z-depth-0 blue"><i class="material-icons left">open_in_new</i>Open App</a>
-                                <a target="_blank" href="http://github.com/k4kfh/MaterialAdventCalendar" class="btn-large z-depth-0 blue"><i class="octicon left octicon-mark-github"></i>GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="modal-footer">
-                <a class="btn-flat black-text waves-effect" onclick="$('#myProjects').closeModal();">close</a>
-                
-                <a href="http://github.com/k4kfh" class="btn-flat hoverable black-text z-depth-0 waves-effect"><i class="octicon left octicon-mark-github"></i>Fork me on GitHub</a>
-            </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  <div class="container">
+    <div class="col s12">
+    <div class="cms_main"></div>
+  </div>
+</div>
+
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <div class="center">
+            <div class="cms_footer_text white-text"></div>
         </div>
-        
-        <script>
-          $(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
-  });
-        </script>
-    </body>
+      </div>
+    </div>
+
+  <!-- Page View -->
+  <script id="page-template" type="x-template">
+    <div class="page">
+      <h1 class="page-title white-text center light"></h1>
+      <div class="card">
+      <div class="card-content">
+      <div class="page-content"></div>
+      </div>
+      </div>
+    </div>
+  </script>
+
+  <!-- Post View -->
+  <script id="post-template" type="x-template">
+    <article class="post card hoverable">
+      <div class="card-content">
+        <h4 class="post-title black-text"></h4>
+        <div class="post-content"></div>
+        <br>
+        <div class="divider"></div>
+        <hr style="opacity:0;">
+        <div>
+          <a class="light grey-text hide-on-small-only">Posted on </a><time class="post-date"></time>
+          <a class="btn-flat grey lighten-3 waves-effect right post-title">Read More<i class="material-icons right">arrow_forward</i></a>
+        </div>
+
+      </div>
+    </article>
+  </script>
+
+  <!--template for post's full page-->
+  <script id="post-full-template" type="x-template">
+  <div class="post">
+  <h2 class="post-title white-text center light"></h2>
+  <div class="center center-align">
+  <div class="chip"><div class="post-date"></div></div>
+  </div>
+    <div class="card">
+      <div class="card-content">
+        <div class="post-content"></div>
+      </div>
+    </div>
+    </div>
+  </script>
+
+  <!-- Error View -->
+  <script id="error-template" type="x-template">
+  	<div class="error">
+  		<b>Sorry, something went wrong :(</b>
+  		<p class="error_text"></p>
+  		<a href="#" class="close alert_close">&times;</a>
+  	</div>
+  </script>
+  <script src="js/marked.js"></script>
+  <script src="js/cms.js"></script>
+  <script src="js/config.js"></script>
+  <script src="custom.js"></script>
+</body>
 </html>

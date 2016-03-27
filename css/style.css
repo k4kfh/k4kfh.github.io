@@ -1,0 +1,22 @@
+body {
+  overflow-y: scroll;
+}
+
+.sticky-nav
+{
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+
+a.post-title {
+  font-size: 2.28rem;
+}
+
+h1.post-title {
+  font-size: 0rem;
+}
+
+.btn-flat.post-title {
+  font-size: 1rem;
+}
