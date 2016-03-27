@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post: CMS.js is working!
+title: CMS.js is working!
 ---
 
 So I've got a blog...now what?
