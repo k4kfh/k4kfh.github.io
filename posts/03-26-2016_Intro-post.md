@@ -3,7 +3,7 @@ layout: post
 title: First Post: CMS.js is working!
 ---
 
-Now that I've got CMSjs tuned to my liking, I went ahead and started up my blog! But what does the future hold for this crazy client-side creation?
+So I've got a blog...now what?
 
 ### How It Works
 
