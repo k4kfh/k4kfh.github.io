@@ -19,7 +19,9 @@ Fast forward a little while, and the mechanism/electronics are mostly done. I ha
 
 I have not yet written the interface to the layout, but I plan on using the ArduinoCMRI library with JMRI to make the turntable appear as a group of turnouts, exactly as a "real" indexing system (such as a Walthers brand turntable) would. Until then, here's a quick demo video to showcase the mechanism's basic functions.
 
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-zNWIkmaTNo" frameborder="0" allowfullscreen></iframe>
 
 ---
-#### Questions? Post in this forum thread.](
+[**Questions? Post in this forum thread.**](http://www.modelrailroadforums.com/forum/showthread.php?39239-Atlas-Turntable-Custom-DCC-Controller&p=426376)
