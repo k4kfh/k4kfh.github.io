@@ -1,8 +1,4 @@
-
----
-layout: post
-title: Installing Unifi Controller on Ubuntu Server 16.04 LTS
----
+# Installing Ubiquiti's Unifi Controller on Ubuntu 16.04 LTS Server
 
 ![](http://cdn.arstechnica.net/wp-content/uploads/2015/10/portal05-980x517.png)
 _Screenshot by ArsTechnica_
