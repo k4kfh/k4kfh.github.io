@@ -6,29 +6,29 @@ title: Installing Unifi on Ubuntu Server 16.04
 ![](http://cdn.arstechnica.net/wp-content/uploads/2015/10/portal05-980x517.png)
 _Screenshot by ArsTechnica_
 
-## Intro
+#### Intro
 
 One of the key features of Ubiquiti Networks' Unifi access points is their centralized management. While many other companies have centralized management controllers for their APs, Ubiquiti offers great features at a much lower price point than other vendors.
 
 For less than $90, you can get their Unifi AC AP Lite, which offers basic 802.11ac radios, passive PoE with the provided injector, and fully integrates with all the other Unifi APs. Their most expensive AP, the Unifi AC AP Pro, has support for standard 802.3af PoE, dual gigabit Ethernet interfaces for failover, and faster radios which offer the full 802.11ac speeds of up to 1300mbps. All the APs in their line also support other advanced features, such as guest portals and bandwidth monitoring, which are handled through the Unifi controller.
 
-## Unifi Controller - How does it work?
+#### Unifi Controller - How does it work?
 
 The Unifi Controller is the basis for all the centralized management. It is accessible in any web browser, leaving you free to use whatever platform you want to configure your APs. The controller server is written in Java and runs on Apache Tomcat, but Ubiquiti provides excellent prebuilt packages that eliminate the need to configure Tomcat yourself. The controller runs on Windows, Mac OSX, and Linux, but I personally prefer running it on Linux because of the extremely low hardware requirements of a headless Linux server install.
 
-## Networking/Subnetting your APs
+#### Networking/Subnetting your APs
 
 You _can_ run the server on a different network than your APs (including in a cloud VPS such as Amazon's EC2, Linode, or Digital Ocean), but I generally recommend keeping them all on the same subnet for simplicity's sake.
 
 > If you do not put them on the same subnet, you will need to set each AP's "Inform URL" separately to point to your controller server. It is possible, and works reliably once configured, but it is not covered in this tutorial.
 
-### Security
+**Security**
 
 If you're setting up these APs for a business, or you just want to be extra security-conscious, I recommend putting them on a separate management network that the main office network(s) cannot access. **For general home use, it is easier and more convenient to put the APs on your main network if you do not have a need for extremely secure management.**
 
 ---
 
-## Installation
+#### Installation
 
 **1. Set up a basic Ubuntu Server 16.04 install.** Make sure to download package updates before continuing with ``sudo apt-get update && sudo apt-get upgrade``.
 
