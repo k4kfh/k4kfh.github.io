@@ -7,9 +7,9 @@ title: My Work
 
 I've learned so much thanks to open-source software, so I've released a handful of my projects as open-source.
 
-#### [ZephyrCab](https://github.com/k4kfh/ZephyrCab)
+---
 
-![](https://camo.githubusercontent.com/38b31a4c0b4e08aa0b236da0d82ec15e44ea2589/687474703a2f2f692e696d6775722e636f6d2f6e3037787874492e706e67)
+[![](https://camo.githubusercontent.com/38b31a4c0b4e08aa0b236da0d82ec15e44ea2589/687474703a2f2f692e696d6775722e636f6d2f6e3037787874492e706e67)](https://github.com/k4kfh/ZephyrCab)
 
 - **Physics engine for realistic model train handling**
 - Language: JavaScript/HTML/CSS
