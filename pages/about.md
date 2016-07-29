@@ -1,6 +1,6 @@
 ---
 layout: default
-title: My Work
+title: Projects
 ---
 
 ### Open Source
