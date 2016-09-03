@@ -1,112 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>K4KFH</title>
-  <meta name="description" content="A blog filled with Linux, programming, model trains, and all sorts of other goodies!">
-  <meta name="author" content="K4KFH (Hampton)">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/poole.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <head>
 
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Your page title here :)</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!---prism syntax highlighting--->
-  <link href="css/prism.css" rel="stylesheet" />
-  <script src="js/prism.js"></script>
-</head>
-<body class="blue">
-  <!-- Main View -->
-  <div class="content">
-    <div class="container white-text">
-      <div class="col s12 container">
-        <div class="row center white-text">
-            <h3 class="cms_sitename white-text light"></h3>
-            <div class="cms_nav"></div>
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/skeleton.css">
+            <link rel='stylesheet' href="css/custom.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <link rel="icon" type="image/png" href="images/favicon.png">
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="js/text-flip.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="twelve columns" style="background-image: url(https://hd.unsplash.com/photo-1462651369841-9be325b94ade); background-size:cover; background-attachment:fixed; background-position: bottom center;">
+            <div id="fullscreen-intro" class="twelve columns segment viewport-height" style="color:white; top:0;">
+                <div class="container viewport-height" id="nav">
+                    <div class="twelve columns">
+                        <div class="row">
+                            <div class="twelve columns" style="margin-top: 25%">
+                                <h1><b>Hi, I'm Hampton.</b></h1>
+                            </div>
+                        </div>
+                        <div class="row height-ease">
+                            <div class="twelve columns height-ease">
+                                <h3>I'm <a class="job-title">a <b>cyber professional</b></a></h3>
+                            </div>
+                        </div>
+                        <div class="row" style="z-index:200000">
+                            <div class="six columns source-sans">
+                                <p>I'm a developer with a  passion for making awesome things. I take advantage of powerful open-source technologies to create robust solutions without breaking the bank.</p>
+                                <button class="button-primary">My Work</button>
+                                <a href="https://github.com/k4kfh" target="_blank"><button class="button-light"><span class="octicon octicon-mark-github"></span>GitHub</button></a>
+                                <button class="button-light">Blog</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eight columns" style="color:white; top:0; margin-top:5%">
+                <h2>Posts</h2>
+            </div>
         </div>
-      </div>
-    </div>
-    <br>
-  </div>
-  <div class="container">
-    <div class="col s12">
-    <div class="cms_main"></div>
-  </div>
-</div>
-
-    <div class="row">
-      <div class="col s4 offset-s4">
-        <div class="center">
-            <div class="cms_footer_text white-text"></div>
-        </div>
-      </div>
-    </div>
-
-  <!-- Page View -->
-  <script id="page-template" type="x-template">
-    <div class="page">
-      <h1 class="page-title white-text center light"></h1>
-      <div class="card">
-      <div class="card-content">
-      <div class="page-content"></div>
-      </div>
-      </div>
-    </div>
-  </script>
-
-  <!-- Post View -->
-  <script id="post-template" type="x-template">
-    <article class="post card hoverable">
-      <div class="card-content">
-        <h4 class="post-title black-text"></h4>
-        <div class="post-content"></div>
-        <br>
-        <div class="divider"></div>
-        <hr style="opacity:0;">
-        <div>
-          <a class="light grey-text hide-on-small-only">Posted on </a><time class="post-date"></time>
-          <a class="btn-flat grey lighten-3 waves-effect right post-title">Read More<i class="material-icons right">arrow_forward</i></a>
-        </div>
-
-      </div>
-    </article>
-  </script>
-
-  <!--template for post's full page-->
-  <script id="post-full-template" type="x-template">
-  <div class="post">
-  <h2 class="post-title white-text center light"></h2>
-  <div class="center center-align">
-  <div class="chip"><div class="post-date"></div></div>
-  </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="post-content"></div>
-      </div>
-    </div>
-    </div>
-  </script>
-
-  <!-- Error View -->
-  <script id="error-template" type="x-template">
-  	<div class="error">
-  		<b>Sorry, something went wrong :(</b>
-  		<p class="error_text"></p>
-  		<a href="#" class="close alert_close">&times;</a>
-  	</div>
-  </script>
-  <script src="js/marked.js"></script>
-  <script src="js/cms.js"></script>
-  <script src="js/config.js"></script>
-  <script src="custom.js"></script>
-</body>
+    </body>
 </html>
