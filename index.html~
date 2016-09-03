@@ -53,7 +53,7 @@
                                 <p>I'm a developer with a  passion for making awesome things. I take advantage of powerful open-source technologies to create robust solutions without breaking the bank.</p>
                                 <button class="button-primary">My Work (Coming Soon!</button>
                                 <a href="https://github.com/k4kfh" target="_blank"><button class="button-light"><span class="octicon octicon-mark-github"></span>GitHub</button></a>
-                                <a href="http://blog.evilgeniustech.com"><button class="button-light">Blog</button></a>
+                                <!--<button class="button-light">Blog</button>-->
                             </div>
                         </div>
                     </div>
