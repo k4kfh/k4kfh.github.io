@@ -1,6 +1,8 @@
 navbar_entries:
-  - title: About Me
-    url: about
+
+# commenting this out till I get the page actually written
+#  - title: About Me
+#    url: about
 
   - title: Blog
     url: blog
