@@ -49,7 +49,9 @@ Now we need to move the backups off the machine. If you're using a NAS, go ahead
 
 I used this command to mount my backup drive, so I'll use that mount point for the drive in the rest of the tutorial
 
-<pre><code>mount /dev/sdX /mnt/backupDrive </pre></code>
+```
+mount /dev/sdX /mnt/backupDrive
+```
 
 Now that the drive is mounted, go ahead and copy the entire VM backups folder to it. If you backed up your stuff to Proxmox's built in "local" storage, it'll be in <code>/var/lib/vz</code>, and we'll be assuming that's where it is for this guide.
 
