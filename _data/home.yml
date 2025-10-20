@@ -7,32 +7,30 @@ navbar_entries:
   - title: Blog
     url: blog
 
+# I want to add this in the future
+# - title: Reading/Listening List
+#   url : media-list
+
 project_entries:
-  - title: Project 1
-    url: overview-post
-    desc: This is an example project, configured in _data/home.yml
+  - title: QUCS-S Documentation
+    url: https://qucs-s-help.readthedocs.io/en/latest/
+    desc: I contributed to the content and the underlying infrastructure of the documentation for this excellent mixed-signal circuit simulator.
 
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
+  - title: ER32 Spindle for Taig Micro Lathe
+    url: https://www.youtube.com/watch?v=BCkW2dN5M6A
+    desc: As an upgrade for my Taig Micro Lathe, I designed and manufactured an ER32 spindle from scratch, using a set of Nachi angular contact bearings.
 
-  - title: Project 3
-    url: overview-post
-    desc: You can control visibility from _config.yml file
+  - title: The Hardware Store Steam Boiler
+    url: nonexistent
+    desc: I built a water-tube steam boiler with no machining, and minimal silver soldering, based on a late-60s Popular Mechanics issue.
 
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
+  - title: 1:8 Scale Vertical Steam Engine
+    url: nonexistent
+    desc: I machined and assembled a 1:8 scale model of a 6HP vertical steam engine, using a casting kit from PM Research, Inc.
 
-  - title: Project 5
+  - title: ZephyrCab
     url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
-
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
+    desc: A web app with a scratch-built train physics/air brake simulation, which adds realistic throttle and brake controls to model diesel locomotives.
 
 footer_entries:
   - title: GitHub

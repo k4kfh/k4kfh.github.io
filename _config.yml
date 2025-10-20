@@ -9,6 +9,7 @@ permalink: /:slug
 # Exclude backend files
 exclude:
 - README.md
+- _posts/2020-07-09-post-example.md # This is my template/reference for syntax, not a real post
 
 #favicon: "./logo.png" # relative path to site's favicon
 
