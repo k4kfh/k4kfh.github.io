@@ -3,9 +3,45 @@ layout: home
 ---
 
 <style>
-.container { display: flex; justify-content: space-between; align-items: center}
-.left { flex: 3; padding-top: 15px; padding-bottom: 15px; padding-right: 15px}
-.right { flex: 6; padding-top: 15px; padding-bottom: 15px; padding-left:15px; align-items: center}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Image (left side on wide screens) */
+.left {
+  flex: 3;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+/* Text (right side on wide screens) */
+.right {
+  flex: 6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  align-items: center;
+}
+
+/* -- On narrower screens, stack the image on top of the text rather than placing it beside it. -- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;       /* Stack vertically */
+    align-items: center;          /* Center image and text */
+  }
+
+  .left, .right {
+    padding: 0px;                /* Also get rid of the padding in this narrower layout, so the margins match the less-heavily-formatted text underneath this area */
+  }
+
+  .left img {
+    max-width: 100%;              /* Make image scale to screen width */
+    height: auto;
+  }
+}
 </style> 
 
 <div class="container">
