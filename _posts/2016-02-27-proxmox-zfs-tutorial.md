@@ -39,7 +39,7 @@ Additionally you will need some kind of external storage if you're migrating bet
 
 Using the webGUI, back up all the VMs you want to keep. If you have the space on your external storage medium, I would recommend not using compression since it takes longer. If you have limited space or you're using a NAS though, you should probably use it. Either way the procedure is the same.
 
-![](http://i.imgur.com/sHbroCS.png)
+![](https://i.imgur.com/sHbroCS.png)
 
 If you're not sure, use these backup settings. Use the normal "local" storage unless you know what you're doing. Do this for all your VMs and containers! Whatever you leave out here will be gone!
 
@@ -119,18 +119,18 @@ This layout seems to work pretty good for my needs, but **be sure to set ``vm.sw
 
 For my 64GB SSD example, I had these settings:
 
-![](http://i.imgur.com/oBpqTSO.png)
+![](https://i.imgur.com/oBpqTSO.png)
 
 Make a note of the values you used here; you'll want them later.
 
 Once you get done with this, configure a password and your timezone, and then you get to network settings. Set this to something that'll work long term; it's a total pain to change the IP. The FDQN does not have to be an actual domain name on the internet, so if you don't know, just say ``whateveryouwant.localdomain`` and you'll be okay.
 
-![](http://i.imgur.com/uWWmUXu.png)
+![](https://i.imgur.com/uWWmUXu.png)
 
 
 Once this is done, it'll do some stuff and then drop you at this screen. Once you get here, you're done with the install! Go ahead and click reboot, but don't let it actually boot into the new Proxmox install yet.
 
-![](http://i.imgur.com/DaVLDH7.png)
+![](https://i.imgur.com/DaVLDH7.png)
 
 ---
 
@@ -138,11 +138,11 @@ Once this is done, it'll do some stuff and then drop you at this screen. Once yo
 
 We're going to use an Ubuntu Live CD with GParted to create free space on the SSD. I used [Ubuntu GNOME](https://ubuntugnome.org/download/) for this guide, but you can use any Linux live CD with a partitioning tool. Just download the ISO and boot from it.
 
-![](http://i.imgur.com/DTV4Wm2.png)
+![](https://i.imgur.com/DTV4Wm2.png)
 
 Choose "Try Ubuntu GNOME" to boot a live version of the OS instead of booting the installer.
 
-![](http://i.imgur.com/fj7N3Bx.png)
+![](https://i.imgur.com/fj7N3Bx.png)
 
 Once you get to the desktop, open gparted. If you're not familiar with GNOME, all you need to do is click "Activities", type "gparted", and press enter, as shown in the screenshot above.
 
@@ -152,22 +152,22 @@ In GParted, you should see something like this screenshot. The large LVM partiti
 
 Right click the partition and choose "Resize/Move."
 
-![](http://i.imgur.com/FuoMSTk.png)
+![](https://i.imgur.com/FuoMSTk.png)
 
 I set 24GB of free space, so that's how much I need to shrink my partition by. You should substitute in the correct value for your system. Just multiply the amount (in GB) you used in the Proxmox installer by 1024. 
 
 24 * 1024 = 24576, so I'll shrink it by 24576MB, as shown below.
 
-![](http://i.imgur.com/IwUJy6j.png)
+![](https://i.imgur.com/IwUJy6j.png)
 
 When you confirm that, you should see a new item in the table pop up, labeled "unallocated." In the bottom left, you'll also see "one operation pending." To actually write the changes to your disk, you need to click the green "Apply All Operations" button as shown below. It'll warn you about loss of data, but proceed anyway.
 
-![](http://i.imgur.com/yoeVmGf.png)
+![](https://i.imgur.com/yoeVmGf.png)
 
 
 If all goes according to plan, GParted will do some stuff, then tell you the operations completed successfully. 
 
-![](http://i.imgur.com/JRVH8HR.png)
+![](https://i.imgur.com/JRVH8HR.png)
 
 Once you see something like this, you can close out of GParted, shut down your PC, and remove the Ubuntu Live CD. You won't need the CD again.
 
@@ -193,7 +193,7 @@ Open your ``sources.list`` file with the text editor of your choice. You can use
 
 Once you open it, add ``deb http://download.proxmox.com/debian jessie pve-no-subscription`` at the bottom. It's probably a good idea to leave a comment to note why you did this, but you don't have to. Your file should look something like this in the end.
 
-![](http://i.imgur.com/AZKk0eW.png)
+![](https://i.imgur.com/AZKk0eW.png)
 
 _Newbies: If you're using ``nano``, press CTRL+X, Y for yes, and ENTER to save and exit._
 
@@ -213,7 +213,7 @@ Still logged in as root, run ``cfdisk /dev/sda``. If you find ``cfdisk`` is not 
 
 You can see the free space we made earlier highlighted in purple. The text-based UI is pretty self-explanatory, so go ahead and make the partitions you need. You can see below how I did mine from start to finish.
 
-![](http://i.imgur.com/hiu9CQb.gif)
+![](https://i.imgur.com/hiu9CQb.gif)
 
 ---
 
@@ -283,7 +283,7 @@ We've created a ZFS pool, and we can store things on it, but now we need to tell
 
 You'll get a certificate warning because the machine does not have an SSL certificate signed by a third party. Proceed anyway, and log in with ``root`` and your password.
 
-![](http://i.imgur.com/gOowjeh.png)
+![](https://i.imgur.com/gOowjeh.png)
 
 _New Users: Proxmox will give you a pop-up saying you don't have a valid subscription. Just click okay; that's just to let you know you're not running the paid version_
 
@@ -298,15 +298,15 @@ _New Users: Proxmox will give you a pop-up saying you don't have a valid subscri
 
 Once you've logged in, go to Datacenter > Storage, and click Add > ZFS (in the top left) as shown below.
 
-![](http://i.imgur.com/d0MKfCX.png)
+![](https://i.imgur.com/d0MKfCX.png)
 
 It is very important to choose only "Containers" under "Content." The rest of your settings should look like this, and are pretty straightforward.
 
-![](http://i.imgur.com/WDbhuXu.png)
+![](https://i.imgur.com/WDbhuXu.png)
 
 Add another ZFS volume, call it ``vm-disks``, and only allow "Disk Images" under "Content" this time. Also be sure to check "Thin provision." Your settings should look like this.
 
-![](http://i.imgur.com/SxsiEaJ.png)
+![](https://i.imgur.com/SxsiEaJ.png)
 
 Now we've got our container storage and VM storage. The Proxmox ZFS plugin will only allow storing disk images and containers, so we're going to add a normal directory for the backups and ISO storage volumes. We know the mount point of the ZFS array (``/my-zfs-pool``) so it's an easy workaround.
 
@@ -314,17 +314,17 @@ Click "Add" again, only this time **choose "Directory" instead of "ZFS."**
 
 For  ``zfs-templates`` , I recommend allowing both container templates and ISO images. This gives you a single, easy place to store the tools to create containers and KVM virtual machines. Make sure for the directory you use the correct mount point! It will be ``/whatever-your-pool-name-was-that-you-set-earlier``.
 
-![](http://i.imgur.com/zwSeEK7.png)
+![](https://i.imgur.com/zwSeEK7.png)
 
 You can do almost the same thing for ``zfs-backups``, just name it something different and allow only VZDump backup files, like so:
 
-![](http://i.imgur.com/VYkIkLi.png)
+![](https://i.imgur.com/VYkIkLi.png)
 
 Once you're done, you should have 5 storage volumes counting the built-in ``local``, which is on the SSD. I chose to disable ``local`` so I don't accidentally put things there, and you can do that by selecting it in the list of storage volumes, clicking "Edit" and unchecking "Enable".
 
 Now if you expand the node dropdown to the far left, you should see something like this.
 
-![](http://i.imgur.com/IvIJxW3.png)
+![](https://i.imgur.com/IvIJxW3.png)
 
 If you see all the volumes you wanted, you've done it correctly. Good job! You can click on them to view disk usage info, set permissions, and view content if you'd like. You can also upload content, so if you have ISOs that's how you upload them.
 
