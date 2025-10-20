@@ -37,6 +37,6 @@ I use this site as a portfolio for my open-source work and hobby projects, and t
 
 I've spread my open-source work across a few platforms:
 * **[GitHub](https://github.com/k4kfh)**: Most of my software, tooling, and electronics work lives here.
-* **[GrabCAD](https://grabcad.com/hampton.morgan-1)**: I use this to share any CAD models I make (I'm often find myself cornered into making a model of a common-off-the-shelf item), and a few purely-mechanical open-source hardware designs.
+* **[GrabCAD](https://grabcad.com/hampton.morgan-1)**: I use this to share any CAD models I make (I often find myself cornered into making a model of a common-off-the-shelf item), and a few purely-mechanical open-source hardware designs.
 
 A few of my personal favorite projects (of the ones I'm allowed to share...) are linked below.
