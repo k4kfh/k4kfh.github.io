@@ -9,7 +9,7 @@ In both 2021 and 2023, I got to attend the annual Live Steam Festival at the [Mi
 
 Today, the museum has dozens of stationary steam engines, a few steam donkeys and traction engines, and countless antique machine tools in their collection. Many are still in running condition, and the original lineshaft system is still operable (although it has been converted to run on a gigantic 3-phase electric motor, rather than a steam engine).
 
-The musem is particularly unique in that the _building_ is as old as the antique machinery within it. The windows, brick walls, floors, furniture, office equipment, and signage are largely as old as the machines themselves. This makes the museum a very unique experience that feels like time travel, and creates some beautiful industrial "landscapes."
+The musem is particularly unique in that the _building_ is as old as the antique machinery within it. The windows, brick walls, floors, furniture, office equipment, and signage are largely as old as the machines themselves. This makes the museum a very unique experience that feels like time travel, and creates some beautiful industrial "landscapes." As an engineer, I find it to be an inspiring example of function _and_ form coexisting.
 
 This post is to share some of the photos that my now-wife and I took on our two visits.
 
