@@ -13,8 +13,20 @@ The musem is particularly unique in that the _building_ is as old as the antique
 
 This post is to share some of the photos that my now-wife and I took on our two visits.
 
-## Photos
+- [Steam Engine Photos](#steam-engine-photos)
+  - [The Watts-Campbell Corliss Engine](#the-watts-campbell-corliss-engine)
+  - [V-Twin Compound Engine](#v-twin-compound-engine)
+  - [Single-Cylinder Vertical Engine](#single-cylinder-vertical-engine)
+  - [Other Steam Engines](#other-steam-engines)
+- [Machine Tools and Other Things](#machine-tools-and-other-things)
+  - [Machine Tools](#machine-tools)
+  - [Signage/Offices/Knick-Knacks](#signageofficesknick-knacks)
+  - [The Pattern Shop](#the-pattern-shop)
+    - [Automatic Saw Filer](#automatic-saw-filer)
+  - [Locomotive](#locomotive)
 
+
+## Steam Engine Photos
 
 ### The Watts-Campbell Corliss Engine
 
@@ -71,6 +83,8 @@ A small single-cylinder vertical steam engine, painted in red and green. I can't
 
 ![](https://i.imgur.com/Sydtvao.jpeg)
 *A small steam water pump. I can't recall much about the history of this pump, but I do know pumps like this were common as boiler feedwater pumps. This one had numerous leaking packing glands, hence the steam and condensate going everywhere. Not very efficient, but it did make for some pretty photographs!*
+
+## Machine Tools and Other Things
 
 ### Machine Tools
 
