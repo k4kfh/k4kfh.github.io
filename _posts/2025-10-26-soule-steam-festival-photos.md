@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "America's Industrial History: Photos at The Soulé Steam Feed Works"
+title: "Function Without Sacrificing Form: Photos from The Soulé Steam Feed Works"
 ---
 
 ## Introduction
