@@ -147,7 +147,7 @@ This was one of my favorite parts of the museum - old machinery is often unneces
 ![](https://i.imgur.com/lwIGCle.jpeg)
 *A pattern for a crank, with a cast-in counterweight. This may have been used on a steam engine or air compressor, I'm not sure.*
 
-![](https://i.imgur.com/lwIGCle.jpeg)
+![](https://i.imgur.com/AynvuAa.jpeg)
 *A small Westinghouse electric motor, being used to drive a piece of woodworking equipment in the pattern shop. I thought this was interesting because this motor's vented end caps were made with sand casting - the very same process it supported here in the pattern shop.*
 
 ![](https://i.imgur.com/8SakZOE.jpeg)
