@@ -6,6 +6,10 @@ description: > # description of the site (multiple lines allowed)
 
 permalink: /:slug
 
+# Search engine ownership verification (rendered into <head> by jekyll-seo-tag)
+webmaster_verifications:
+  google: x6Jb3v67VZVTr_RJmIELBvtB9k6bRL9QBKEA2sP6O2o
+
 # Exclude backend files
 exclude:
 - README.md
