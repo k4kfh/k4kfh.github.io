@@ -2,7 +2,7 @@ title: Hampton Morgan
 author: Hampton Morgan
 url: https://k4kfh.github.io # root address of the site
 description: > # description of the site (multiple lines allowed)
-  ...
+  Hampton Morgan: Christ-follower. Programmer, maker, open-source hardware devotee, mechanical designer and model engineer, outdoorsman, railfan.
 
 permalink: /:slug
 
@@ -56,3 +56,4 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
